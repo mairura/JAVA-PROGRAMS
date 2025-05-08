@@ -1,0 +1,25 @@
+// Java program to take an integer as input and print it
+import java.io.*;
+import java.util.Scanner;
+
+class UserInput
+{
+    public static void main(String[] args)
+    {
+        int num;
+
+        System.out.println("Enter the integer: ");
+
+        // Create Scanner object
+        Scanner s = new Scanner(System.in);
+
+        // Read the next integer from the screen
+        num = s.nextInt();
+
+        // Display the integer
+        System.out.println("Entered integer is: " + num);
+
+        // Close the Scanner object
+        s.close(); // Important to prevent resource leaks
+    }
+}
