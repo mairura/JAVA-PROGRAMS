@@ -7,7 +7,7 @@ public class GuessNumber {
         // Generates a random number between 1 and 100
         int number = 1 + (int)(100 * Math.random());
 
-        // Number of attempts
+        // Limited number of attempts
         int K = 5;
 
         System.out.println("A number is chosen between 1 and 100.");
