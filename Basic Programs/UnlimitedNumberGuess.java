@@ -21,7 +21,7 @@ public class UnlimitedNumberGuess {
                 attempts++;
 
                 if(guess == number ) {
-                    System.out.println("Congratulations! You guessed the correct number in " + attempts + " attempts");
+                    System.out.println("Congratulations! You guessed the correct number " + number + " in " + attempts + " attempts");
                     guessedCorrectly = true;
                     break;
                 } else if (guess < number) {
