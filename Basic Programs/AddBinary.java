@@ -10,9 +10,7 @@ public class AddBinary {
         int sum = num1 + num2;
 
         // Converting that resultant decimal into binary string
-        String result = Integer.toBinaryString(sum);
-
-        return result;
+        return Integer.toBinaryString(sum);
     }
 
     public static void main(String[] args) {

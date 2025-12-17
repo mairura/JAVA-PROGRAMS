@@ -1,13 +1,11 @@
 // Java program to add two complex numbers
-
 class ComplexNumber {
 
 	// variables to hold real and imaginary part of complex number
 	int real, image;
 
 	// Constructor which will be used while creating complex number
-	public ComplexNumber(int r, int i)
-	{
+	public ComplexNumber(int r, int i) {
 		this.real = r;
 		this.image = i;
 	}
@@ -15,13 +13,11 @@ class ComplexNumber {
 	// function to print real number
 	public void showC()
 	{
-		System.out.print(this.real + " +i" + this.image);
+		System.out.println(this.real + " + i" + this.image);
 	}
 
 	// function for addition
-	public static ComplexNumber add(ComplexNumber n1,
-									ComplexNumber n2)
-	{
+	public static ComplexNumber add(ComplexNumber n1, ComplexNumber n2) {
 
 		// creating blank complex number to store result
 		ComplexNumber res = new ComplexNumber(0, 0);
@@ -36,15 +32,14 @@ class ComplexNumber {
 		return res;
 	}
 
-	public static void main(String arg[])
-	{
+	public static void main(String[] args) {
 
 		// creating two complex numbers
 		ComplexNumber c1 = new ComplexNumber(4, 5);
 		ComplexNumber c2 = new ComplexNumber(10, 5);
 
 		// printing complex numbers
-		System.out.print("first Complex number: ");
+		System.out.print("First Complex number: ");
 		c1.showC();
 		
 		System.out.print("\nSecond Complex number: ");
@@ -54,7 +49,7 @@ class ComplexNumber {
 		ComplexNumber res = add(c1, c2);
 
 		// displaying addition
-		System.out.println("\nAddition is :");
+		System.out.print("\nAddition is: ");
 		res.showC();
 	}
 }

@@ -33,6 +33,7 @@ public class UnlimitedNumberGuess {
 
             if(!guessedCorrectly) {
                 System.out.println("You have used all " + K + " attempts.");
+                System.out.println();
                 System.out.println("Do you want to continue guessing? (yes/no): ");
                 String response = sc.next();
 
